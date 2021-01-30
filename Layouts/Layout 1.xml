@@ -58,7 +58,7 @@
                 </instance>
                 <instance type="Minutero" uid="2">
                     <properties>
-                        <text>5</text>
+                        <text>05</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Impact,-38.4,400,0</font>
                         <color>0,0,0</color>
@@ -71,38 +71,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>35</x>
-                        <y>12</y>
-                        <z>0</z>
-                        <width>39</width>
-                        <height>59</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="elCero" uid="3">
-                    <properties>
-                        <text>0</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Impact,-37.6,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
                         <x>15</x>
-                        <y>12</y>
+                        <y>11</y>
                         <z>0</z>
-                        <width>26</width>
-                        <height>57</height>
+                        <width>49</width>
+                        <height>59</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <variable constant="0" name="Minutos" sid="279334951412333" static="0" type="number">0</variable>
-        <variable constant="0" name="Segundos" sid="835025620964661" static="0" type="number">5</variable>
+        <variable constant="0" name="Minutos" sid="279334951412333" static="0" type="number">5</variable>
+        <variable constant="0" name="Segundos" sid="835025620964661" static="0" type="number">60</variable>
         <event-block sid="538006489590270">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="548196798719781" type="System" />
@@ -14,7 +14,7 @@
                     <param id="0" name="Text">&quot;:&quot; &amp; Segundos</param>
                 </action>
                 <action id="0" name="Set text" sid="498906712359269" type="Minutero">
-                    <param id="0" name="Text">&quot;&quot;&amp; Minutos</param>
+                    <param id="0" name="Text">&quot;0&quot;&amp; Minutos</param>
                 </action>
             </actions>
         </event-block>
@@ -52,7 +52,7 @@
         <event-block sid="942714944267720">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="377272856064914" type="System">
-                    <param id="0" name="Interval (seconds)">5</param>
+                    <param id="0" name="Interval (seconds)">60</param>
                 </condition>
             </conditions>
             <actions>
@@ -61,7 +61,7 @@
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Set text" sid="334654609043123" type="Minutero">
-                    <param id="0" name="Text">&quot;&quot;&amp; Minutos</param>
+                    <param id="0" name="Text">&quot;0&quot;&amp; Minutos</param>
                 </action>
             </actions>
         </event-block>
