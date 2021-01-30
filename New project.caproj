@@ -11,10 +11,12 @@
     <saved-with-version>27900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
-        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -90,16 +92,24 @@
         <object-type name="Sprite4" sid="646483068764238">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Platform" sid="536881004602957">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="Physics" sid="711254637397858">
-                    <behavior id="Physics" />
+                <behavior-type name="8Direction" sid="399433783433829">
+                    <behavior id="EightDir" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193750498435464" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.14" y="0.14" />
+                            <point x="0.5" y="0.16" />
+                            <point x="0.716" y="0.284" />
+                            <point x="0.848" y="0.5" />
+                            <point x="0.772" y="0.728" />
+                            <point x="0.472" y="0.688" />
+                            <point x="0.18" y="0.628" />
+                            <point x="0.088" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -119,10 +129,65 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Segundero" sid="354466859344632">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite6" sid="545660208313048">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="531694545633266" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textoGameOver" sid="762716827866743">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="745128167094288">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Minutero" sid="740723166398580">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="elCero" sid="792281650566347">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite7" sid="580617817986870">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="990881304827299">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="414335448278621">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924849681482974" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.276" y="0.24" />
+                            <point x="0.691999" y="0.244" />
+                            <point x="0.631999" y="0.559999" />
+                            <point x="0.288" y="0.551999" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="451803617338899">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125668895981115" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>

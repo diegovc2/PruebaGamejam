@@ -2,5 +2,104 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <variable constant="0" name="Minutos" sid="279334951412333" static="0" type="number">0</variable>
+        <variable constant="0" name="Segundos" sid="835025620964661" static="0" type="number">5</variable>
+        <event-block sid="538006489590270">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="548196798719781" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="518239934247623" type="Segundero">
+                    <param id="0" name="Text">&quot;:&quot; &amp; Segundos</param>
+                </action>
+                <action id="0" name="Set text" sid="498906712359269" type="Minutero">
+                    <param id="0" name="Text">&quot;&quot;&amp; Minutos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="288254108985495">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="775376815515557" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="423328515447281" type="System">
+                    <param id="0" name="Variable">Segundos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="768271232646834" type="Segundero">
+                    <param id="0" name="Text">&quot;:&quot; &amp; Segundos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="835328569909304">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="684395584490724" type="System">
+                    <param id="0" name="Variable">Segundos</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="647243384054651" type="System">
+                    <param id="0" name="Variable">Segundos</param>
+                    <param id="1" name="Value">60</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="942714944267720">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="377272856064914" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="232903137339118" type="System">
+                    <param id="0" name="Variable">Minutos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="334654609043123" type="Minutero">
+                    <param id="0" name="Text">&quot;&quot;&amp; Minutos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="133171896198548">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="317084905682683" type="System">
+                    <param id="0" name="Variable">Minutos</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="587007716578347" type="Sprite7">
+                    <param id="0" name="X">Sprite4.X</param>
+                    <param id="1" name="Y">Sprite4.Y</param>
+                </action>
+                <action id="-17" name="Move forward" sid="259138967057362" type="Sprite7">
+                    <param id="0" name="Distance">3</param>
+                </action>
+                <action id="0" name="Set text" sid="780754536237548" type="Segundero">
+                    <param id="0" name="Text">&quot;00&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="393959698366002" type="Minutero">
+                    <param id="0" name="Text">&quot;0&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="872943630019583">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="967382063051744" type="Sprite7">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="577537386092006" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
