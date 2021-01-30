@@ -33,7 +33,7 @@
                     <properties>
                         <text>:60</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Impact,-29.6,400,0</font>
+                        <font>DS-Digital,-38.4,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -44,10 +44,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>56</x>
-                        <y>19</y>
+                        <x>54</x>
+                        <y>11</y>
                         <z>0</z>
-                        <width>66</width>
+                        <width>75</width>
                         <height>53</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -60,7 +60,7 @@
                     <properties>
                         <text>05</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Impact,-38.4,400,0</font>
+                        <font>DS-Digital,-38.4,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -120,15 +120,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>970</x>
-                        <y>559</y>
+                        <x>991</x>
+                        <y>263</y>
                         <z>0</z>
                         <width>250</width>
                         <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
+                        <angle>-0.000006699</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
