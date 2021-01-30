@@ -12,7 +12,11 @@
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -42,9 +46,28 @@
     <object-folder>
         <object-type name="Sprite" sid="280745733553881">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="585239482136142">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="751643921678139">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627284835485723" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.296" y="0.296" />
+                            <point x="0.5" y="0.268" />
+                            <point x="0.856" y="0.292" />
+                            <point x="0.948" y="0.5" />
+                            <point x="0.884" y="0.724" />
+                            <point x="0.5" y="0.876" />
+                            <point x="0.296" y="0.836" />
+                            <point x="0.172" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -60,6 +83,38 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621116135714023" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="646483068764238">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="536881004602957">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="711254637397858">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193750498435464" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="796988661428596">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="893880146627496">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="826765017883513">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="828908754721916" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
